@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "GPT-Rex - AI assist for blogging on Medium",
+  "version": "0.0.1",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "description": "GPT-Rex is an AI assistant for blogging on Medium. It uses GPT-3 to help you write faster and avoid writer's block.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://medium.com/*",
+        "https://www.medium.com/*",
+        "https://*.medium.com/*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab", "storage"]
+}

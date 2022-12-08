@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 Write Assist</title>
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="popup.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container pt-3 px-2">
+    <h2 class="text-center my-1">gpt-rex</h2>
+    <p class="text-center"><small>.. your AI powered writing assistant</small></p>
+    <div class="row justify-content-center" id="setup">
+      <div class="col-12 m-1">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Step 1: Get API Key</div>
+              Navigate to <a id="key-cta" href="">this openai page</a>, generate an API key and copy it.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Step 2: Save API key</div>
+              <div class="form-group">
+                <div class="input-group text-center py-2">
+                  <input type="password" class="form-control" id="api-key" placeholder="Enter API Key">
+                  <button class="input-group-text btn btn-secondary" id="save-key">Save</button>
+                </div>
+              </div>
+              <small>(keys are stored locally & you can revoke them from OpenAI's website)</small>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Get busy blogging!</div>
+              While blogging on <a href="https://medium.com" target="_blank">Medium</a>, simply press
+              <span style="background-color: #ddd">&nbsp;Ctrl + &gt; </span>&nbsp;to trigger GPT-Rex to help your
+              writer's
+              block!
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="preferences">
+      <div class="col-11">
+        <div class="fw-bold pb-1">AI Assistant</div>
+        <select class="form-select" id="engine">
+          <option class="py-2" value="davinci">DaVinci - Best ($$$$)</option>
+          <option class="py-2" value="curie">Curie - Better ($$$)</option>
+          <option class="py-2" value="babbage">Baggage - Good ($$)</option>
+          <option class="py-2" value="ada">Ada - Ok ($)</option>
+        </select>
+      </div>
+      <div class="col-11 pt-3">
+        <div class="fw-bold pb-1">Assist level</div>
+        <div class="form-group" id="completion-cta">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="completion" value="high" id="completion-high">
+            <label class="form-check-label" for="completion-high">
+              High ~50 words
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="completion" value="low" id="completion-low">
+            <label class="form-check-label" for="completion-low">
+              Low ~20 words
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 pt-3">
+        <div class="fw-bold">Creative freedom</div>
+        <div class="form-group">
+          <small>(0 = none, 1 = a lot)</small>
+          <div class="input-group justify-content-between">
+            <div class="col-9">
+              <input type="range" class="form-range" min="0" max="1" step="0.01" id="temperature">
+            </div>
+            <div class="col-3 text-end">
+              <strong>
+                <p id="temperature-display" style="color: darkolivegreen" class="m-0"></p>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 pt-3">
+        <div class="fw-bold pb-1">Trigger Assist: Ctrl + &gt;</div>
+      </div>
+    </div>
+    <footer class="text-center pt-3 pb-2">
+      <h4>🧑 💞🤖</h4>
+      <div>
+        <small>by <a href="https://twitter.com/hayabhay" target="_blank">abhay kashyap</a> |
+          <a href="https://github.com/hayabhay/gpt-go/discussions" target="_blank">feedback</a>
+        </small>
+      </div>
+      <div>
+        <small class="flaticon-attr"><a href="https://www.flaticon.com/free-icons/rpa" title="rpa icons">Rpa icons
+            created by Freepik -
+            Flaticon</a>
+        </small>
+      </div>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
