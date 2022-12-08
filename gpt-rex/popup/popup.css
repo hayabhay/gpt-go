@@ -1,0 +1,13 @@
+body {
+  width: 20rem;
+  background-image: url("bg.png");
+  background-position: center;
+  background-repeat: cover;
+  color: #333;
+}
+
+.flaticon-attr a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: rgb(49, 61, 116);
+}
