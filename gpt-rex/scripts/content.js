@@ -184,7 +184,7 @@ function triggerMediumAssist(event) {
 
 document.addEventListener("keydown", function (event) {
   // Check if the 'ctrl' and 's' keys were pressed to trigger the extension
-  if (event.ctrlKey && event.key === ">") {
+  if (event.ctrlKey && (event.key === ">" || event.key === ".")) {
     // Prevent the default action
     event.preventDefault();
 
