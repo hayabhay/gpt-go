@@ -4,17 +4,19 @@ GPT Go is a suite of free, open source Chrome extensions to bring GPT-3 everywhe
 
 The first pilot is GPT-Rex, a write assistant/co-pilot for Medium.
 It is fully functional and once set up, you can simply hit "Ctrl + >" to trigger an auto-complete.
-Direction integrations with other blogging platforms are coming soon in addition to other editing uses cases like scientific writing using LaTeX for Overleaf etc.
+Direct integrations with other blogging platforms are coming soon in addition to other editing uses cases like scientific writing using LaTeX for Overleaf etc.
+
+Extension now available from [Chrome Webstore](https://chrome.google.com/webstore/detail/gpt-rex-ai-assist-for-blo/occhafcmdjiieioboagohfigolecoeag).
 
 Updates will be posted on [Twitter](https://twitter.com/hayabhay) and [LinkedIn](https://www.linkedin.com/in/abhaykashyap12/).
 
 > **Note**: This was done in collaboration with chatGPT and Github Co-pilot and all the people they learned from 😊
 
-> **Note**: This extension is currently under review by the Chrome Web Store. Until then, you can install from source.
-
 ![GPT-Rex Demo](/assets/demo.gif)
 
 ## Installation
+
+You can also install this from source with these instructions.
 
 1. Download the source code from this repository as a zip file.
 2. Unzip the source code.
